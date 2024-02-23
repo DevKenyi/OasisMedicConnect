@@ -1,4 +1,4 @@
-package com.example.oasismedicconnect.configuration.jwt_configuration.authorization;
+package com.example.oasismedicconnect.authorization;
 import com.example.oasismedicconnect.configuration.jwt_configuration.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

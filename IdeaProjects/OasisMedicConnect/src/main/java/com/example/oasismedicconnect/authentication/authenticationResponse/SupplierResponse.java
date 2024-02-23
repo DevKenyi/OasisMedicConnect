@@ -1,4 +1,4 @@
-package com.example.oasismedicconnect.configuration.jwt_configuration.authentication.authenticationResponse;
+package com.example.oasismedicconnect.authentication.authenticationResponse;
 
 import com.example.oasismedicconnect.enums.Gender;
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustomerResponse {
+public class SupplierResponse {
     private String jwtToken;
     private String userRole;
     private String userName;
@@ -19,5 +19,4 @@ public class CustomerResponse {
     private String phoneNumber;
     private String Id;
     private String address;
-
 }

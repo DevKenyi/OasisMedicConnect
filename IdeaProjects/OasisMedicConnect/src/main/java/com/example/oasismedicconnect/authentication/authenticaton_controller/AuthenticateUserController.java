@@ -1,12 +1,11 @@
-package com.example.oasismedicconnect.configuration.jwt_configuration.authentication.authenticaton_controller;
+package com.example.oasismedicconnect.authentication.authenticaton_controller;
 
 import com.example.oasismedicconnect.configuration.jwt_configuration.JwtUtils;
-import com.example.oasismedicconnect.configuration.jwt_configuration.authentication.authenticationResponse.CustomerResponse;
-import com.example.oasismedicconnect.configuration.jwt_configuration.authentication.authenticationResponse.SupplierResponse;
+import com.example.oasismedicconnect.authentication.authenticationResponse.CustomerResponse;
+import com.example.oasismedicconnect.authentication.authenticationResponse.SupplierResponse;
 import com.example.oasismedicconnect.model.Customer;
 import com.example.oasismedicconnect.model.LoginRequest;
 import com.example.oasismedicconnect.model.Supplier;
-import com.example.oasismedicconnect.model.Token;
 import com.example.oasismedicconnect.repositories.CustomerRepo;
 import com.example.oasismedicconnect.repositories.SupplierRepo;
 import com.example.oasismedicconnect.repositories.TokenRepo;
@@ -21,11 +20,8 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

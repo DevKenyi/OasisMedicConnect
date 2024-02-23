@@ -1,6 +1,6 @@
 package com.example.oasismedicconnect.configuration.jwt_configuration;
 
-import com.example.oasismedicconnect.configuration.jwt_configuration.authentication.CustomUserDetailsService;
+import com.example.oasismedicconnect.authentication.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

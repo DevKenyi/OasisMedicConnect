@@ -1,4 +1,4 @@
-package com.example.oasismedicconnect.configuration.jwt_configuration.authentication;
+package com.example.oasismedicconnect.authentication;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.cors.CorsConfiguration;

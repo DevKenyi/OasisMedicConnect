@@ -1,4 +1,4 @@
-package com.example.oasismedicconnect.configuration.jwt_configuration.authentication;
+package com.example.oasismedicconnect.authentication;
 
 
 import com.example.oasismedicconnect.enums.Roles;

@@ -1,6 +1,7 @@
 package com.example.oasismedicconnect.service;
 
 import com.example.oasismedicconnect.configuration.jwt_configuration.JwtUtils;
+import com.example.oasismedicconnect.emai_service.EmailService;
 import com.example.oasismedicconnect.enums.Roles;
 import com.example.oasismedicconnect.model.Customer;
 import com.example.oasismedicconnect.model.Supplier;
@@ -36,6 +37,10 @@ public class RegistrationService {
     private TokenService tokenService;
     Customer customerEntity = new Customer();
     Supplier supplierEntity = new Supplier();
+
+    @Autowired
+    private EmailService emailService;
+
 
 
 
@@ -81,7 +86,11 @@ public class RegistrationService {
             token.setExpired(tokenService.isTokenExpired(generatedToken));
 
             tokenRepo.save(token);
+            //send link to users email
+            emailService.sendTokenEmail(generatedToken, customerEntity.getEmail());
+
             log.info("Token generated and saved for customer: " + customerEntity.getEmail());
+
 
             return ResponseEntity.status(HttpStatus.CREATED).body("Click the link sent to your email address to verify your token " + generatedToken);
         } catch (Exception e) {

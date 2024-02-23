@@ -1,4 +1,4 @@
-package com.example.oasismedicconnect.configuration.jwt_configuration.authorization;
+package com.example.oasismedicconnect.authorization;
 
 import com.example.oasismedicconnect.model.Customer;
 import com.example.oasismedicconnect.repositories.CustomerRepo;

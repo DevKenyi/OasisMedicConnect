@@ -1,6 +1,6 @@
 package com.example.oasismedicconnect.service;
 
-import com.example.oasismedicconnect.configuration.jwt_configuration.authorization.AccessTokenValidator;
+import com.example.oasismedicconnect.authorization.AccessTokenValidator;
 import com.example.oasismedicconnect.repositories.CustomerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
