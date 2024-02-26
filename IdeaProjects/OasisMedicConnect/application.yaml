@@ -1,0 +1,35 @@
+#spring:
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: lumitechcity@gmail.com
+#    password: ebrz xcaz unmw onsw
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#            required: true
+#
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#      dialect: org.hibernate.dialect.MySQL8Dialect
+#    show-sql: true
+#
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/oasis_medic_connect_schema
+#    username: root
+#    password: password
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#server:
+#  port: 9092
+#
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
+#    org.springframework.security.authentication: trace
+#    org.springframework.security.authorization: debug

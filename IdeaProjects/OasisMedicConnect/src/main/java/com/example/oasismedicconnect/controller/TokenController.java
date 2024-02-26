@@ -27,18 +27,12 @@ public class TokenController {
         return tokenService.verifyTokenForCustomer(tokenId, customerId, tokenString);
     }
 
-
     @GetMapping("token-data")
-
     public ResponseEntity<List<Token>> tokenList(){
         return tokenService.getToken();
     }
 
-    //Todo remove this end point in production
-//    @GetMapping("test/{id}")
-//    public ResponseEntity<Boolean> findCustomerToken(@PathVariable String id){
-//        return tokenService.findCustomerTokenById(id);
-//    }
+
 
 
 

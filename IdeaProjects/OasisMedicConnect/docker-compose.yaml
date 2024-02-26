@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    image: devkenyi/oasis:002
+    ports:
+      - "9092:9092"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/oasis_medic_connect_schema?autoReconnect=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      DATABASE_HOST: docker_mysql
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: oasis_medic_connect_schema
+
+
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password

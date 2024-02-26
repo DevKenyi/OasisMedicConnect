@@ -86,8 +86,8 @@ public class RegistrationService {
             token.setExpired(tokenService.isTokenExpired(generatedToken));
 
             tokenRepo.save(token);
-            //send link to users email
-            emailService.sendTokenEmail(generatedToken, customerEntity.getEmail());
+           emailService.sendTokenEmail(generatedToken, customerEntity.getEmail());
+
 
             log.info("Token generated and saved for customer: " + customerEntity.getEmail());
 
